@@ -1,0 +1,41 @@
+{
+  "name": "genpark-multi-token-speculative-fim-code-generator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-token speculative fill-in-the-middle code generator with repository prefix-suffix context fusion.",
+  "author": "genpark",
+  "category": "code-generation",
+  "tags": [
+    "deepseek-coder",
+    "speculative-decoding",
+    "fim-completion",
+    "multi-token-prediction",
+    "code-intelligence"
+  ],
+  "inputs": {
+    "prefix_context": {
+      "type": "string"
+    },
+    "suffix_context": {
+      "type": "string"
+    },
+    "target_language": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "completion_job_id": {
+      "type": "string"
+    },
+    "speculative_draft_tokens_accepted": {
+      "type": "integer"
+    },
+    "ast_syntax_verified": {
+      "type": "boolean"
+    },
+    "latency_ms": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
